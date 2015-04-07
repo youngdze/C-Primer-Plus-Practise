@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-struct Tuple Cacul(int);
+struct Tuple Cal(int);
 
 struct Tuple
 {
@@ -14,14 +14,14 @@ int main(void)
     printf("Enter a limit integer: ");
     while (scanf("%d", &nLimit) == 1)
     {
-        printf("Up: %g Down: %g\n", Cacul(nLimit).fUp, Cacul(nLimit).fDown);
+        printf("Up: %g Down: %g\n", Cal(nLimit).fUp, Cal(nLimit).fDown);
         printf("Enter a limit integer: ");
     }
 
     return 0;
 }
 
-struct Tuple Cacul(int nLimit)
+struct Tuple Cal(int nLimit)
 {
     double fUp = 0, fDown = 0;
     double i;

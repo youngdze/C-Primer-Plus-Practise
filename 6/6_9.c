@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int cacul(int, int);
+int cal(int, int);
 
 int main(void)
 {
@@ -10,14 +10,14 @@ int main(void)
     ;
     while (scanf("%d%d", &nLower, &nUpper) == 2 && nLower < nUpper)
     {
-        printf("The sums of the squares from %g to %g is %d\n", pow(nLower, 2), pow(nUpper, 2), cacul(nLower, nUpper));
+        printf("The sums of the squares from %g to %g is %d\n", pow(nLower, 2), pow(nUpper, 2), cal(nLower, nUpper));
         printf("Enter lower and upper integer limits: ");
     }
 
     return 0;
 }
 
-int cacul(int nLower, int nUpper)
+int cal(int nLower, int nUpper)
 {
     int nSum;
     int i;
