@@ -14,7 +14,7 @@ int main()
 
     for (i = 0; i < SIZE; i++)
     {
-        num[i] = rand() % SIZE + 1;
+        num[i] = rand() % 10 + 1;
         printf("%d ", num[i]);
     }
 
